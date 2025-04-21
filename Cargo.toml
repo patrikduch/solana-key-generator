@@ -8,9 +8,8 @@ license = "GPL-3.0"
 repository = "https://github.com/patrikduch/solana-key-generator"
 
 [dependencies]
-reqwest = { version = "0.11", features = ["json"] }
-tokio = { version = "1", features = ["full"] }
-serde_json = "1.0"
-
-# solana
 solana-sdk = "1.18.0"
+bip39 = "2.0.0" # Aligned with code requirements
+rand = "0.8.5"
+tokio = { version = "1.0", features = ["full"] }
+bs58 = "0.5.0"
